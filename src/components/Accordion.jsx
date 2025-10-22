@@ -40,7 +40,7 @@ const Accordion = () => {
             className={`border ${index == 0 ? "" : "border-t-0"}  p-2 px-3`}
           >
             <div
-              className="flex justify-between items-center font-semibold text-lg select-none"
+              className="flex justify-between items-center cursor-pointer font-semibold text-lg select-none"
               onClick={() => setAccordion(accordion === index ? null : index)}
             >
               {item.question}
