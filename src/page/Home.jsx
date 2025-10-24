@@ -1,12 +1,14 @@
 import Accordion from "../components/Accordion";
 import { useState } from "react";
 import Corousel from "../components/Corousel";
+import SearchBar from "../components/SearchBar";
 
 const Home = () => {
   const [components, setComponents] = useState();
   const componentTitle = [
     { title: "Accordion", component: <Accordion /> },
     { title: "Corousel", component: <Corousel /> },
+    { title: "Search Bar", component: <SearchBar /> },
   ];
   return (
     <div className="flex flex-col justify-center mt-12">
